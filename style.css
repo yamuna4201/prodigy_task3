@@ -1,0 +1,96 @@
+/* Gradient background for the page */
+body {
+    background: linear-gradient(135deg, #FF6347, #FFD700, #32CD32, #8A2BE2);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Game container styling */
+.game-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjusted transparency for better contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Title styling */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Tic-Tac-Toe board grid */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+/* Individual cell styling */
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    color: black;
+}
+
+/* Hover effect for cells */
+.cell:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+/* Style for player X */
+.cell.x {
+    color: #FF6347;
+}
+
+/* Style for player O */
+.cell.o {
+    color: #32CD32;
+}
+
+/* Status message */
+.status {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
